@@ -96,6 +96,53 @@
         font-size: 14px;
         font-weight: 300;
     }
+    .cta-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 10px;
+}
+
+.cta-oso {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  padding: 18px 28px;
+  border-radius: 16px;
+
+  background: #0C0C0C;
+  color: #DDA53C;
+  border: 2px solid #DDA53C;
+
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+
+  /* Tipografía estilo H1 */
+  font-size: clamp(28px, 3.2vw, 44px);
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.cta-oso:hover {
+  background: #DDA53C;
+  color: #0C0C0C;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.55);
+}
+
+.cta-oso:active {
+  transform: translateY(0px);
+}
+
+.cta-oso:focus-visible {
+  outline: 3px solid rgba(221,165,60,0.35);
+  outline-offset: 4px;
+}
 </style>
 </head>
 
@@ -155,6 +202,13 @@
         <source src="./22_mb_OSO.mp4" type="video/mp4">
         Tu navegador no soporta la reproducción de video HTML5.
     </video>
+<div class="cta-wrap">
+  <a class="cta-oso"
+     href="https://wa.me/5493472505640?text=Buenas,%20me%20gustar%C3%ADa%20ser%20parte%20del%20proyecto%20El%20Oso.%20%C2%BFPueden%20enviarme%20m%C3%A1s%20informaci%C3%B3n%3F"
+     target="_blank" rel="noopener">
+    QUIERO SER PARTE
+  </a>
+</div>
 </section>
 
 <!-- Botón de WhatsApp -->
